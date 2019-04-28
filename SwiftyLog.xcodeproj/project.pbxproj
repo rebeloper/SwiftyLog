@@ -12,6 +12,8 @@
 		C9B2F1E022750A4E009557C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B2F1DE22750A4E009557C8 /* Main.storyboard */; };
 		C9B2F1E222750A4F009557C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9B2F1E122750A4F009557C8 /* Assets.xcassets */; };
 		C9B2F1E522750A4F009557C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B2F1E322750A4F009557C8 /* LaunchScreen.storyboard */; };
+		C9B2F1ED22750A66009557C8 /* SwiftyLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2F1EC22750A66009557C8 /* SwiftyLog.swift */; };
+		C9B2F1F122752A3C009557C8 /* DispatchQueueHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2F1F022752A3C009557C8 /* DispatchQueueHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C9B2F1E122750A4F009557C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9B2F1E422750A4F009557C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9B2F1E622750A4F009557C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9B2F1EC22750A66009557C8 /* SwiftyLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLog.swift; sourceTree = "<group>"; };
+		C9B2F1F022752A3C009557C8 /* DispatchQueueHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchQueueHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				C9B2F1E122750A4F009557C8 /* Assets.xcassets */,
 				C9B2F1E322750A4F009557C8 /* LaunchScreen.storyboard */,
 				C9B2F1E622750A4F009557C8 /* Info.plist */,
+				C9B2F1EC22750A66009557C8 /* SwiftyLog.swift */,
+				C9B2F1F022752A3C009557C8 /* DispatchQueueHelper.swift */,
 			);
 			path = SwiftyLog;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9B2F1DD22750A4E009557C8 /* ViewController.swift in Sources */,
+				C9B2F1F122752A3C009557C8 /* DispatchQueueHelper.swift in Sources */,
+				C9B2F1ED22750A66009557C8 /* SwiftyLog.swift in Sources */,
 				C9B2F1DB22750A4E009557C8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +296,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"-D",
+					DEBUG,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Rebeloper.SwiftyLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
